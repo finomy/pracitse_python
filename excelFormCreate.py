@@ -184,7 +184,7 @@ def create_teachplan_excel():
             ws['B' + str(13 + len(course_list))] = other_info_list[11]
             ws['B' + str(14 + len(course_list))] = other_info_list[12]
             ws['D' + str(14 + len(course_list))] = other_info_list[13]
-        wb.save('D:\\测试项目\\林业局二期\\生成\\'+title+'.xlsx')
+        wb.save('D:\\'+title+'.xlsx')
     target_list = generate_chinese_text((1, 100))
     amount_list = generate_numbers()
     start_time_list = generate_date(2018, 1, 30)
