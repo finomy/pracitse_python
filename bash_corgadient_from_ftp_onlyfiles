@@ -1,0 +1,12 @@
+#need "sudo apt-get install ftp"
+#need to change workindex to the the target index
+
+ftp -v -n 172.20.xxx.xxx 8080 <<EOF
+user qfjusr 123456
+binary
+cd /home/xx
+prompt off
+#download only files no folders
+mget *
+bye
+EOF
