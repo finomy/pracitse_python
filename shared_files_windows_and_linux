@@ -1,0 +1,7 @@
+#need smbclient and difs-utils
+#create a new folder to place the files
+#mkdir /mnt/my_share
+sudo mount -t cifs -o username=xxxxx //172.20.xxx.xxx/source_shared_folder target_folder_path
+password
+
+#umount target_folder_path
